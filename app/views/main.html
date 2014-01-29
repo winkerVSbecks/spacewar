@@ -1,0 +1,23 @@
+<div class="sixteen columns">
+
+	<h2 class="match-title"> Pick A Team</h2>
+
+</div>
+
+
+<div 
+	class="eight columns red team add-bottom" 
+	ng-class="{ 'team-not-available': teams.red.selected }"
+	ng-click="selectTeam('red')"
+>{{ teams.red.name }}</div>
+
+<div 
+	class="eight columns blue team add-bottom" 
+	ng-class="{ 'team-not-available': teams.blue.selected }"
+	ng-click="selectTeam('blue')"
+>{{ teams.blue.name }}</div>
+
+<div 
+	class="sixteen columns spectate add-bottom" 
+	ng-click="spectate()"
+>spectate</div>

@@ -1,0 +1,174 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* #Site Styles
+================================================== */
+#main {
+	margin-top: 40px;
+}
+
+.app-title {
+	font-style: italic;
+}
+
+.app-title .subheader {
+	color: #7F8C8D;
+}
+
+.app-title small { 
+	font-size: 33.33%; 
+}
+
+.match-title {
+	text-align: center;
+}
+
+.timer {
+	text-align: center;
+	font-style: italic;
+}
+
+.red {
+	background: #E74C3C;
+	height: 400px;
+	float: left;
+	color: #C0392B;
+}
+.blue {
+	background: #3498DB;
+	height: 400px;
+	float: left;
+	color: #2980B9;
+}
+.team {
+	border-radius: 8px;
+	cursor: pointer;
+	line-height: 400px;
+	text-align: center;
+	font-weight: 900;
+	font-size: 24px;
+}
+.team-not-available {
+	background: #ECF0F1 !important;
+	cursor: not-allowed !important;
+	color: #BDC3C7;
+}
+.spectate {
+	background: #F1C40F;
+	font-weight: 900;
+	font-size: 20px;
+	border-radius: 8px;
+	cursor: pointer;
+	line-height: 50px;
+	text-align: center;
+	color: #E67E22;
+}
+
+
+.start {
+	background: #fff;
+	width: 100%;
+	height: 400px;
+	line-height: 400px;
+	position: relative;
+	font-size: 20px;
+	top: 0;
+	left: 0;
+	text-align: center;
+}
+
+.start-btn {
+	cursor: pointer;
+	background: #ECF0F1;
+	color: #BDC3C7;
+	font-weight: 900;
+	width: 150px;
+	height: 100px;
+	line-height: 100px;
+	position: relative;
+	left: ;
+	top: 150px;
+	border-radius: 8px;
+	margin-left: auto;
+  margin-right: auto;
+}
+.start-btn:hover {
+	color: #95A5A6;
+}
+
+.finish {
+	width: 100%;
+	height: 400px;
+	line-height: 400px;
+	display: none;
+	font-size: 24px;
+	font-weight: 900;
+	text-align: center;
+}
+.win {
+	background: #2ECC71 !important;
+	display: block;
+	color: #27AE60;
+}
+.loss {
+	background: #ECF0F1 !important;
+	display: block;
+	color: #BDC3C7;
+}
+.tie {
+	background: #F1C40F !important;
+}
+
+
+/* #Page Styles
+================================================== */
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {}
+
+
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../fonts/FontName.eot');
+	    src: url('../fonts/FontName.eot?iefix') format('eot'),
+	         url('../fonts/FontName.woff') format('woff'),
+	         url('../fonts/FontName.ttf') format('truetype'),
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/

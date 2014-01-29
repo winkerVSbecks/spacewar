@@ -1,0 +1,43 @@
+<div class="sixteen columns add-bottom">
+
+	<!-- Ready For Battle -->
+	<div class="start" ng-show="battle.state == 'notStarted'">
+		<div class="start-btn" ng-click="playerReady()">begin</div>
+	</div>
+
+
+	<!-- The Battle -->
+	<div class="space-bar-container" ng-show="battle.state == 'started'">
+		
+		<div class="red" ng-style="{ width: teams.red.health + '%' }"></div>
+		<div class="blue" ng-style="{ width: teams.blue.health  + '%'}"></div>
+
+	</div>
+
+	<!-- Battle Finished -->
+	<div class="space-bar-container add-bottom" ng-show="battle.state == 'finished'">
+		<div class="finish" ng-class="battle.result">{{ battle.message }}</div>
+	</div>
+
+	<div class="space-bar-container" ng-show="battle.state == 'finished'">
+		<div class="spectate" ng-click="rematch()">re-match</div>
+	</div>
+
+</div>
+
+
+<!-- Match Title -->
+<div class="sixteen columns" ng-show="battle.state == 'notStarted'">
+	
+	<h3 class="match-title">
+		Hi {{ teams[this].name }}
+
+		<span ng-show="battle.state == 'notStarted' && !teams[this].isReady && !teams[other].isReady">... click 'begin' to start battle</span>
+
+		<span ng-show="battle.state == 'notStarted' && !teams[this].isReady && teams[other].isReady">... {{ teams[other].name }} is waiting for you to click 'begin'</span>
+
+		<span ng-show="battle.state == 'notStarted' && teams[this].isReady" && !teams[other].isReady">... waiting for {{ teams[other].name }}</span>
+
+	</h3>
+
+</div>

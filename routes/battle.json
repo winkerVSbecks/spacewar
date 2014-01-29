@@ -1,0 +1,17 @@
+{
+
+    "red": { 
+    	"name"     : "winker",
+    	"selected" : false,
+    	"health"   : 50,
+        "isReady"  : false
+    },
+
+    "blue": { 
+    	"name"     : "becks",
+    	"selected" : false,
+    	"health"   : 50,
+        "isReady"  : false
+    }
+
+}
